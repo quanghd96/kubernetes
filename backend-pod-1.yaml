@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-1
+  labels:
+    app: server
+spec:
+  containers:
+    - image: server
+      imagePullPolicy: Never
+      name: server
+      ports:
+        - containerPort: 3000
