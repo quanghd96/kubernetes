@@ -1,2 +1,8 @@
+FROM node:lts-alpine as build-stage
+WORKDIR /app
+COPY . .
+RUN yarn
+RUN yarn build
+
 FROM nginx:alpine
-COPY dist/* /usr/share/nginx/html/
+COPY --from=build-stage /app/dist/* /usr/share/nginx/html/
