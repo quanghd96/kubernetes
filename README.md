@@ -4,7 +4,6 @@
 
 ```
     cd client
-    yarn build
     docker build -t client .
 ```
 
