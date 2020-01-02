@@ -32,3 +32,9 @@
     kubectl create -f frontend-deployment.yaml
     kubectl create -f backend-deployment.yaml
 ```
+## Use Terraform
+
+```
+    terraform init
+    terraform apply
+```
