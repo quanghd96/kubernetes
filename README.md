@@ -4,7 +4,6 @@
 
 ```
     cd client
-    yarn build
     docker build -t client .
 ```
 
@@ -31,6 +30,8 @@
 ```
     kubectl create -f frontend-deployment.yaml
     kubectl create -f backend-deployment.yaml
+    kubectl create -f service-frontend-lb.yaml
+    kubectl create -f service-backend-lb.yaml
 ```
 ## Use Terraform
 
